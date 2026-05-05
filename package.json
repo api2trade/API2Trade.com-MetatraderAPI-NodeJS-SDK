@@ -1,0 +1,42 @@
+{
+  "name": "api2trade-sdk",
+  "version": "1.0.0",
+  "description": "Official JavaScript/TypeScript SDK for the API2Trade MetaTrader REST API",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "echo \"Tests coming soon\" && exit 0"
+  },
+  "keywords": [
+    "metatrader",
+    "mt4",
+    "mt5",
+    "trading",
+    "api2trade",
+    "forex",
+    "sdk"
+  ],
+  "author": "API2Trade",
+  "license": "MIT",
+  "dependencies": {
+    "isomorphic-ws": "^5.0.0",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/ws": "^8.5.10",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
+}
